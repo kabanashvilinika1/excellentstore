@@ -4,97 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ExcellentSMP Store</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- CSS file (IMPORTANT) -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div>🟩 ExcellentSMP</div>
-    <nav class="nav">
-      <a href="#store">STORE</a>
-      <a href="#status">STATUS</a>
-      <a href="#join">HOW TO JOIN</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>EXCELLENT SMP</h1>
-    <p>Pure survival • Real community • Endless adventure</p>
-  </section>
+<header>
+  <div>🟩 ExcellentSMP</div>
+  <nav class="nav">
+    <a href="#store">STORE</a>
+    <a href="#status">STATUS</a>
+    <a href="#join">HOW TO JOIN</a>
+  </nav>
+</header>
 
-  <section class="box">
-    <h2>FEATURES</h2>
-    <ul>
-      <li>✔️ Optimized server for smooth gameplay</li>
-      <li>✔️ Balanced economy & player shops</li>
-      <li>✔️ Anti-cheat and active moderation</li>
-      <li>✔️ Frequent updates & events</li>
-    </ul>
-  </section>
+<section class="hero">
+  <h1>EXCELLENT SMP</h1>
+  <p>Pure survival • Real community • Endless adventure</p>
+</section>
 
-  <section class="box">
-    <h2>ABOUT THE SERVER</h2>
-    <p>ExcellentSMP is a competitive survival multiplayer server with an economy, community events, custom items, and long-term progression. Whether you're a casual builder or a hardcore PvPer, there's something for you here.</p>
-    <ul>
-      <li>🌍 Survival SMP with custom economy</li>
-      <li>⚔️ PvP, events, and tournaments</li>
-      <li>🛠️ Custom items & balanced progression</li>
-      <li>👥 Active community & support</li>
-    </ul>
-  </section>
+<section id="status" class="box">
+  <h2>SERVER STATUS</h2>
+  <p id="serverStatus">Checking server…</p>
+</section>
 
-  <section id="status" class="box">
-    <h2>SERVER STATUS</h2>
-    <p id="serverStatus">Checking server…</p>
-  </section>
-
-  <section id="store" class="box">
-    <h2>REQUEST RANK PURCHASE</h2>
-    <div class="grid">
-      <div class="card">
-        <input id="discord" placeholder="Discord username (e.g. User#0001)">
-        <input id="minecraft" placeholder="Minecraft username">
-        <select id="rank">
-          <option>VIP - 0.99 GEL</option>
-          <option>MVP - 4.99 GEL</option>
-          <option>ELITE - 9.99 GEL</option>
-          <option>LEGEND - 14.99 GEL</option>
-        </select>
-        <button onclick="sendRequest()">REQUEST</button>
-      </div>
+<section id="store" class="box">
+  <h2>REQUEST RANK PURCHASE</h2>
+  <div class="grid">
+    <div class="card">
+      <input id="discord" placeholder="Discord username">
+      <input id="minecraft" placeholder="Minecraft username">
+      <select id="rank">
+        <option>VIP - 0.99 GEL</option>
+        <option>MVP - 4.99 GEL</option>
+        <option>ELITE - 9.99 GEL</option>
+        <option>LEGEND - 14.99 GEL</option>
+      </select>
+      <button onclick="sendRequest()">REQUEST</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="box" id="items">
-    <h2>ITEM SHOP</h2>
-    <p>Place <b>amethyst_pic.png</b> next to this file.</p>
-    <div class="grid">
-      <div class="card">
-        <img src="amethyst_pic.png" alt="Amethyst Pickaxe" class="item-img">
-        <h3>Amethyst Pickaxe</h3>
-        <div class="price">4.99 GEL</div>
-        <input id="discord2" placeholder="Discord username">
-        <input id="minecraft2" placeholder="Minecraft username">
-        <button onclick="sendItem()">BUY ITEM</button>
-      </div>
+<section class="box" id="items">
+  <h2>ITEM SHOP</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="amethyst_pic.png" alt="Amethyst Pickaxe" class="item-img">
+      <h3>Amethyst Pickaxe</h3>
+      <div class="price">4.99 GEL</div>
+      <input id="discord2" placeholder="Discord username">
+      <input id="minecraft2" placeholder="Minecraft username">
+      <button onclick="sendItem()">BUY ITEM</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="join" class="box">
-    <h2>HOW TO JOIN</h2>
-    <p>1. Launch Minecraft</p>
-    <p>2. Multiplayer → Add Server</p>
-    <p>3. Enter IP: <b>excellentsmp.mineserver.uno</b></p>
-    <p>4. Join and play!</p>
-  </section>
+<footer class="footer">© ExcellentSMP</footer>
 
-  <section class="box">
-    <h2>HOW TO SUPPORT</h2>
-    <p>Purchasing ranks or items supports server costs, development, and future features.</p>
-  </section>
-
-  <footer class="footer">© ExcellentSMP</footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
