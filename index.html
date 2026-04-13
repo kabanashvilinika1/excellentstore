@@ -74,11 +74,12 @@ button:hover{background:var(--green);color:black}
 </div>
 </section>
 
-<section class="box">
+<section class="box" id="items">
 <h2>ITEM SHOP</h2>
+<p>Upload your image file named <b>amethyst_pickaxe.png</b> into the same folder as this HTML file so the picture displays here.</p>
 <div class="grid">
 <div class="card">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAIAAAD6XpeDAAAIw0lEQVR4AeydW2xUVRSGB6EZKK2dmV" style="width:80px;image-rendering:pixelated"><br>
+<img src="amethyst_pickaxe.png" style="width:120px;image-rendering:pixelated;display:block;margin:0 auto 10px;" alt="Amethyst Pickaxe"><br>
 <h3>Amethyst Pickaxe</h3>
 <div class="price">4.99 GEL</div>
 <input id="discord2" placeholder="Discord username">
@@ -95,7 +96,11 @@ function sendItem(){
   const discord=document.getElementById('discord2').value;
   const mc=document.getElementById('minecraft2').value;
   if(!discord||!mc){alert('Fill all fields');return;}
-  fetch(webhookURL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({content:`🛒 **Item Purchase**\nItem: Amethyst Pickaxe\nDiscord: ${discord}\nMinecraft: ${mc}\nPrice: 4.99 GEL`})});
+  fetch(webhookURL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({content:`🛒 **Item Purchase**
+Item: Amethyst Pickaxe
+Discord: ${discord}
+Minecraft: ${mc}
+Price: 4.99 GEL`})});
   alert('Request sent!');
 }
 </script>
