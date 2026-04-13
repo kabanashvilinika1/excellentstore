@@ -10,11 +10,18 @@
 
 body {
   margin: 0;
-  background: #050905;
-  background-image: radial-gradient(circle at center, #0b1f0b, #000 70%), repeating-linear-gradient(90deg, rgba(0,255,0,0.05) 0 2px, transparent 2px 40px), repeating-linear-gradient(0deg, rgba(0,255,0,0.05) 0 2px, transparent 2px 40px);
   font-family: 'Press Start 2P', monospace;
   color: #9aff3c;
   text-align: center;
+
+  /* Pixel terrain style background (not just neon) */
+  background-color: #0b130b;
+  background-image:
+    radial-gradient(circle at 20% 20%, #1f3d1f 0, transparent 40%),
+    radial-gradient(circle at 80% 80%, #153015 0, transparent 40%),
+    linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px);
+  background-size: 200px 200px, 200px 200px, 32px 32px, 32px 32px;
 }
 
 .container {
@@ -25,8 +32,9 @@ body {
 
 h1 {
   font-size: 2.6rem;
-  text-shadow: 0 0 8px #6cff00;
+  text-shadow: 3px 3px #000;
   letter-spacing: 4px;
+  color: #8bff3b;
 }
 
 .subtitle {
@@ -36,17 +44,17 @@ h1 {
 }
 
 .card {
-  border: 2px solid #6cff00;
+  border: 3px solid #4caf50;
   padding: 20px;
   margin: 25px auto;
   max-width: 700px;
   background: rgba(0,0,0,0.7);
-  box-shadow: 0 0 10px #3cff00;
+  box-shadow: 0 0 10px rgba(0,255,0,0.3);
 }
 
 button {
-  background: #6cff00;
-  border: none;
+  background: #4caf50;
+  border: 2px solid #2e7d32;
   padding: 12px 20px;
   color: black;
   cursor: pointer;
@@ -55,16 +63,16 @@ button {
 }
 
 button:hover {
-  background: #9aff3c;
+  background: #6aff6a;
 }
 
 .rank {
   display: inline-block;
   width: 260px;
-  border: 2px solid #6cff00;
+  border: 2px solid #4caf50;
   margin: 15px;
   padding: 15px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.65);
 }
 
 .ip {
